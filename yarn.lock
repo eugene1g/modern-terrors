@@ -2,6 +2,13 @@
 # yarn lockfile v1
 
 
+clean-stack@^5.0.1:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/clean-stack/-/clean-stack-5.1.0.tgz#56ed4531141724a6a74f8593bd90c6e1b3e26dc1"
+  integrity sha512-OvcHXysP+g24vnqjX6vnYJnlswWzWbHWTbHpHWtT2tJW5D//NeIlXZmMiY297KC/6DbvVwy1BarEJ1whGVjX+g==
+  dependencies:
+    escape-string-regexp "5.0.0"
+
 error-class-utils@^2.4.0, error-class-utils@^2.5.0:
   version "2.5.0"
   resolved "https://registry.yarnpkg.com/error-class-utils/-/error-class-utils-2.5.0.tgz#7dfa3fc09efb8714156d4953716b189c5f545736"
@@ -13,6 +20,11 @@ error-custom-class@^8.4.0:
   integrity sha512-WS8v14AVXtyNHgORTInJkKEc7xA4NDXLyUnNGR2QpkuiF1WQuok/GqGpmNqWwNvSKxxHvCOZ8Kj+wiSUPpT3ag==
   dependencies:
     error-class-utils "^2.4.0"
+
+escape-string-regexp@5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-5.0.0.tgz#4683126b500b61762f2dbebace1806e8be31b1c8"
+  integrity sha512-/veY75JbMK4j1yjvuUxuVsiS/hr/4iHs9FTT6cgTexxdE0Ly/glccBAkloH/DofkjRbZU3bnoj38mOmhkZ0lHw==
 
 filter-obj@^5.1.0:
   version "5.1.0"
@@ -39,10 +51,17 @@ merge-error-cause@^3.5.0:
     set-error-props "^4.0.0"
     wrap-error-message "^1.0.0"
 
-modern-errors@^5.5.1:
-  version "5.5.1"
-  resolved "https://registry.yarnpkg.com/modern-errors/-/modern-errors-5.5.1.tgz#93aca1aecc51dc7505dab8b79b7b43606d6d72bd"
-  integrity sha512-/5uw5WNx1BJCoxIw1PJHcH6KNQGUOfRlz4Lq1dKeD2Ge57nzakK3nWEP6Z9Jh/b3rzss4qVcbeMyiyM+MT9dbA==
+modern-errors-clean@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/modern-errors-clean/-/modern-errors-clean-3.1.0.tgz#5da642c67356c5378c4ae64f5c9d17c2c9d5378c"
+  integrity sha512-rzud/PYFfhALBPTU0WQev/NnflISq32QeLFwv5QQ/1tgz0ovvr/2P7V41eCHkmedoMwVfX6Env8d+GUPdxbXVw==
+  dependencies:
+    clean-stack "^5.0.1"
+
+modern-errors@^5.5.3:
+  version "5.5.3"
+  resolved "https://registry.yarnpkg.com/modern-errors/-/modern-errors-5.5.3.tgz#7dfb4e9517e3fdb8fa8ed6677e844a7a13f2e847"
+  integrity sha512-7NZInJl1owlJxaP8zJ9B3dUZ3ncdboNY+4SGoiwJfDUN7Jig72mfbGWbRfUG6ghuWeq1n6BRDHxih+QbZZHLsA==
   dependencies:
     error-class-utils "^2.5.0"
     error-custom-class "^8.4.0"
